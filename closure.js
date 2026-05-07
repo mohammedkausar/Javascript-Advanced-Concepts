@@ -1,4 +1,11 @@
 /**
+ * What is closure?
+ * A function holds onto variables from its parent even after the parent has finished executing.
+ * The child function closes over those variables. JavaScript's garbage collector won't touch them until nothing references them anymore.
+ */
+
+
+/**
  * A rate limiter is a function that limits the number of times a given function can be called within a specified time window.
  * For example, if you have a rate limiter that allows 3 calls per 5 seconds, and you call the function 4 times within 5 seconds, the fourth call should be blocked until the time window has passed.
  * Implement a rate limiter function that takes in a rate limit and a time window, and returns a function that can be called to check if the rate limit has been exceeded.
